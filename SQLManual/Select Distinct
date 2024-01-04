@@ -1,0 +1,1 @@
+SELECT DISTINCT - allows me to select the different values from each listed column instead of all duplicate values
