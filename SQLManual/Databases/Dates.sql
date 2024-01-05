@@ -32,4 +32,78 @@ TIMESTAMP -- format: a unique number
 
 -- We use the following SELECT statement:
 
-SELECT * FROM Orders WHERE OrderDate='2008-11-11'
+SELECT * FROM Table1 WHERE Column='2008-11-11'
+
+-- Certainly! If you want to change the data type of an existing column in
+-- a table, you typically need to use the ALTER TABLE statement. Here are
+-- examples for changing the data type of a column for MySQL, PostgreSQL,
+-- SQL Server, and Oracle:
+
+-- 1. MySQL:
+-- Changing Data Type to DATE:
+-- sql
+
+ALTER TABLE your_table
+MODIFY COLUMN your_column DATE;
+
+-- Changing Data Type to DATETIME:
+
+
+ALTER TABLE your_table
+MODIFY COLUMN your_column DATETIME;
+
+-- Changing Data Type to TIMESTAMP:
+
+ALTER TABLE your_table
+MODIFY COLUMN your_column TIMESTAMP;
+
+-- Changing Data Type to YEAR:
+
+ALTER TABLE your_table
+MODIFY COLUMN your_column YEAR;
+
+-- 2. PostgreSQL:
+
+-- Changing Data Type to DATE:
+
+ALTER TABLE your_table
+ALTER COLUMN your_column TYPE DATE;
+
+-- Changing Data Type to TIMESTAMP:
+
+ALTER TABLE your_table
+ALTER COLUMN your_column TYPE TIMESTAMP;
+
+-- 3. SQL Server:
+-- Changing Data Type to DATE:
+
+ALTER TABLE your_table
+ALTER COLUMN your_column DATE;
+
+-- Changing Data Type to DATETIME:
+
+ALTER TABLE your_table
+ALTER COLUMN your_column DATETIME;
+
+-- 4. Oracle:
+-- Changing Data Type to DATE:
+
+ALTER TABLE your_table
+MODIFY your_column DATE;
+
+-- Changing Data Type to TIMESTAMP:
+
+ALTER TABLE your_table
+MODIFY your_column TIMESTAMP;
+
+-- Remember to replace your_table with the actual table name and your_column
+-- with the actual column name that you want to modify. Additionally, altering
+-- a column's data type may result in data conversion issues, so it's essential
+-- to review and handle any potential data conflicts before executing such
+-- statements in a production environment.
+
+
+
+
+
+
