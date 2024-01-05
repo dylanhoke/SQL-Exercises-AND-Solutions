@@ -101,9 +101,3 @@ MODIFY your_column TIMESTAMP;
 -- a column's data type may result in data conversion issues, so it's essential
 -- to review and handle any potential data conflicts before executing such
 -- statements in a production environment.
-
-
-
-
-
-
