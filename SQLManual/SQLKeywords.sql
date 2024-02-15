@@ -52,6 +52,7 @@ IS NULL	--Tests for empty values
 IS NOT NULL	--Tests for non-empty values
 JOIN	--Joins tables
 LEFT JOIN	--Returns all rows from the left table, and the matching rows from the right table
+LENGTH --finds the length of the values in a column
 LIKE	--Searches for a specified pattern in a column
 LIMIT	--Specifies the number of records to return in the result set
 NOT	--Only includes rows where a condition is not true
