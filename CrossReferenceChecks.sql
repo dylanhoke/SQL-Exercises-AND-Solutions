@@ -1,0 +1,8 @@
+CREATE PROCEDURE solution()
+    SELECT id, IF ( given_answer IS NULL, "no answer",
+        IF (given_answer = correct_answer, "correct",
+        IF(given_answer != correct_answer AND given_answer = TRUE, "incorrect", "incorrect")
+        )
+    ) AS checks
+    FROM answers
+    ORDER BY id;
